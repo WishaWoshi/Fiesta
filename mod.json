@@ -1,7 +1,7 @@
 {
     "Name": "Fiesta",
     "Description": "Fiesta! Randomized loadouts for each kill you get and each time you spawn in.\nRequired on both client and server.",
-    "Version": "1.0.1",
+    "Version": "1.0.4",
     "LoadPriority": 1,
     "RequiredOnClient": true,
 

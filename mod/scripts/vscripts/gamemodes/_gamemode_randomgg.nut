@@ -109,16 +109,16 @@ void function UpdateLoadout( entity player )
 {
 	if (IsAlive(player) && player != null && player.IsPlayer()) {
 
-		array<GunGameWeapon> weapons = GetRandomGunGameWeapons()
-		GunGameWeapon newweapon = weapons[ RandomInt( weapons.len() ) ]
+		array<FiestaWeapon> weapons = GetRandomFiestaWeapons()
+		FiestaWeapon newweapon = weapons[ RandomInt( weapons.len() ) ]
 		weapons.remove(weapons.find(newweapon)) // prevent duplicate weapons
-		GunGameWeapon newweapon2 = weapons[ RandomInt( weapons.len() ) ]
+		FiestaWeapon newweapon2 = weapons[ RandomInt( weapons.len() ) ]
 
-		array<GunGameWeapon> ordnances = GetRandomOrdnance()
-		GunGameWeapon ordnance = ordnances[ RandomInt( ordnances.len() ) ]
+		array<FiestaWeapon> ordnances = GetRandomOrdnance()
+		FiestaWeapon ordnance = ordnances[ RandomInt( ordnances.len() ) ]
 
-		array<GunGameWeapon> tacticals = GetRandomTacticals()
-		GunGameWeapon tactical = tacticals[ RandomInt( tacticals.len() ) ]
+		array<FiestaWeapon> tacticals = GetRandomTacticals()
+		FiestaWeapon tactical = tacticals[ RandomInt( tacticals.len() ) ]
 
 		foreach ( entity weapon in player.GetMainWeapons() )
 			player.TakeWeaponNow( weapon.GetWeaponClassName() )
