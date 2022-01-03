@@ -1,0 +1,12 @@
+"lang"
+{
+	"Language" "english"
+	"Tokens"
+	{
+		"PL_randomgg" "Fiesta"
+		"PL_randomgg_lobby" "Fiesta Lobby"
+		"PL_randomgg_desc" "FFA. Every time you spawn in or get a kill you'll get a new weapon."
+		"PL_randomgg_abbr" "RANDOMGG"
+		"GAMEMODE_RANDOMGG" "Fiesta"
+	}
+}
